@@ -66,7 +66,7 @@ CREATE TABLE dim_geography (
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
-/* ============================= STEP: DIMENSION ============================= */
+/* ============================= STEP: STAGE ============================= */
 
 CREATE TABLE stg_super_store (
     row_id INT NOT NULL,
