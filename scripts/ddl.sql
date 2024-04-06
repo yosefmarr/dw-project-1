@@ -96,7 +96,7 @@ CREATE TABLE stg_super_store (
 /* ============================= STEP: FACT ============================= */
 
 CREATE TABLE fac_sales (
-	sk_customer INT NOT NULL REFERENCES dim_client(sk_customer),
+	sk_customer INT NOT NULL REFERENCES dim_customer(sk_customer),
 	sk_product INT NOT NULL REFERENCES dim_product(sk_product),
 	sk_ship_mode INT NOT NULL REFERENCES dim_ship_mode(sk_ship_mode),
 	sk_geography INT NOT NULL REFERENCES dim_geography(sk_geography),
